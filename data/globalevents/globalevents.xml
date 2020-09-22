@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+    <globalevent name="loteria" interval="14400000" event="script" value="vipLottery.lua"/>
+    <globalevent name="redskullaviso" interval="800000" script="redskullaviso.lua"/>
+        <globalevent name="shopguild" interval="30000" event="script" value="shopguild.lua"/>
+	<globalevent name="dttOpen" time="20:00" event="script" value="events/DTT.lua"/>
+	<!--Real Team Battle-->
+	<globalevent name="Real Team Battle" time="19:00:00" event="script" value="events/realTeamBattle.lua"/>
+	<globalevent name="Real Team Battle2" time="23:00:00" event="script" value="events/realTeamBattle.lua"/>
+	<!-- Real Castle -->
+	<globalevent name="Real Castle" time="22:00" event="script" value="realCastle.lua"/>
+	<globalevent name="Real Castle Close" time="23:00" event="script" value="realCastle.lua"/>
+	<globalevent name="RealCastleSite" time="23:02" event="script" value="events/realCastleSite.lua"/>
+
+	<!-- Events -->
+    	<globalevent name="StartSBW" time="12:00" event="script" value="events/SBW.lua"/>
+	<globalevent name="StartSBW3" time="09:00" event="script" value="events/SBW.lua"/>
+	<globalevent name="StartSBW4" time="14:00" event="script" value="events/SBW.lua"/>
+	<globalevent name="AnimatedSBW" interval="1500" event="script" value="events/SBW_animated.lua"/>
+	<globalevent name="firestorm" time="15:00" event="script" value="events/FireStorm.lua"/>
+    	<globalevent name="firestorm2" time="10:00" event="script" value="events/FireStorm.lua"/>
+	<globalevent name="ctf" time="17:00" event="script" value="events/CTF.lua"/>
+    	<globalevent name="battlefield" time="11:00" event="script" value="events/Battlefield.lua"/>
+    	<globalevent name="CampoMinado" time="13:00" event="script" value="events/CampoMinado.lua"/>
+    	<globalevent name="battlefield6" time="02:00" event="script" value="events/Battlefield.lua"/>
+	<globalevent name="ctf2" time="19:30" event="script" value="events/CTF.lua"/>
+
+	<!-- Others -->
+	<globalevent name="start" type="startup" event="script" value="start.lua"/>
+	<globalevent name="startCave" type="startup" event="script" value="Killua Cave Owners.lua"/>
+	<globalevent name="init" type="startup" event="script" value="init.lua"/>
+    	<globalevent name="playersrecord" type="record" event="script" value="record.lua"/>
+
+	<!-- Interval -->
+	<globalevent name="shop" interval="30000" event="script" value="shop.lua"/>
+   	<globalevent name="save" interval="1200000" event="script" value="save.lua"/>
+	<globalevent name="msgfly" interval="1800000" event="script" value="fly.lua"/>
+	<globalevent name="Invasion" interval="8400000" event="script" value="invasao.lua"/>
+    	<globalevent name="mensagemts" interval="1500000" event="script" value="mensagemts.lua" />
+	<globalevent name="avisoip" interval="1050000" event="script" value="avisoip.lua" />
+        <globalevent name="promokao" interval="1100000" event="script" value="promokao.lua" />
+	<globalevent name="tiles" interval="3000" event="script" value="tiles.lua"/>
+	<globalevent name="temploef" interval="3000" event="script" value="temploef.lua"/>
+	<globalevent name="Check Caves" interval="300000" event="script" value="Killua Cave Owners 2.lua"/>
+	
+	<!-- Spoofing -->
+	<globalevent name="SpoofZero" time="07:00" event="script" value="Spoof/SpoofSystem.lua"/>
+	<globalevent name="SpoofCinco" time="13:00" event="script" value="Spoof/SpoofSystem5.lua"/>
+	<globalevent name="SpoofSeis" time="15:00" event="script" value="Spoof/SpoofSystem6.lua"/>
+	<globalevent name="SpoofOito" time="19:00" event="script" value="Spoof/SpoofSystem8.lua"/>
+	<globalevent name="SpoofNove" time="21:00" event="script" value="Spoof/SpoofSystem9.lua"/>
+	<globalevent name="SpoofTreze" time="02:00" event="script" value="Spoof/SpoofSystem13.lua"/> 
+	<globalevent name="SpoofDezesseis" time="05:00" event="script" value="Spoof/SpoofSystem16.lua"/>
+</globalevents>

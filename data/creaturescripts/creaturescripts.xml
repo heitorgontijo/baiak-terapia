@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creaturescripts>
+    <!-- Defend the Towers (ChaitoSoft - Desenvolvedores Open Tibia) -->
+	<event type="death" name="dttDeath" event="script" value="events/DTT.lua"/> 
+	<event type="PrepareDeath" name="dttPrepare" event="script" value="events/DTT.lua"/>
+	<event type="statschange" name="dttStats" event="script" value="events/DTT.lua"/>
+	<event type="outfit" name="dttOutfit" event="script" value="events/DTT.lua"/>
+	<event type="login" name="dttLogin" event="script" value="events/DTT.lua"/>
+	<event type="kill" name="dttKill" event="script" value="events/DTT.lua"/>	
+	<event type="combat" name="dttCombat" event="script" value="events/DTT.lua"/>
+    <!--Real Team Battle-->
+	<event type="login" name="realTeamBattleLogin" event="script" value="events/realTeamBattle.lua"/>
+	<event type="combat" name="realTeamBattleCombat" event="script" value="events/realTeamBattle.lua"/>
+	<event type="target" name="realTeamBattleTarget" event="script" value="events/realTeamBattle.lua"/>
+	<event type="prepareDeath" name="realTeamBattleDeath" event="script" value="events/realTeamBattle.lua"/>
+    <!-- Elemental quest -->
+        <event type="login" name="otlist" event="script" value="otlist.lua"/>
+	<event type="death" name="teleportmonster23" script="tpmonster23.lua"/> <!-- Massive Energy Elemental -->	
+	<event type="death" name="teleportmonster24" script="tpmonster24.lua"/> <!-- Massive Earth Elemental -->	
+	<event type="death" name="teleportmonster25" script="tpmonster25.lua"/> <!-- Massive Fire Elemental -->	
+	<event type="death" name="teleportmonster26" script="tpmonster26.lua"/> <!-- Massive Water Elemental -->
+	<!-- Servidor Desenvolvido By Ciroc -->
+	<!-- Importants -->
+    <event type="kill" name="TopFrags" event="script" value="topfrags.lua" />
+    <event type="login" name="RTopFrags" event="script" value="topfrags.lua" />
+    <event type="look" name="showKD" event="script" value="KillsandDeath.lua"/>
+    <event type="kill" name="Kills" event="script" value="kill.lua"/>
+    <event type="think" name="Thinks" event="script" value="think.lua"/>
+	<event type="login" name="PlayerLogin" event="script" value="login.lua"/>
+	<event type="login" name="FirstItems" event="script" value="firstitems.lua"/>
+	<event type="logout" name="Logout" event="script" value="logout.lua"/>
+	<event type="advance" name="FullHpMana" event="script" value="fullhpmana.lua"/>
+	<event type="advance" name="recompensa" event="script" value="recompensa_level.lua"/>
+	<event type="death" name="huntdeath" event="script" value="death.lua"/>
+	<event type="channeljoin" name="GuildEvents" event="script" value="guild.lua"/>
+	<event type="mailreceive" name="Mail" event="script" value="mail.lua"/>
+	<event type="reportbug" name="SaveReportBug" event="script" value="reportbug.lua"/>
+	<event type="attack" name="attackguild" event="script" value="attackguild.lua"/>
+	<event type="death" name="incendio" event="script" value="incendioMonster.lua"/>
+    	<event type="statschange" name="CombatDodge" event="script" value="dodgecombat.lua"/>
+	<event type="statschange" name="critical" event="script" value="critical.lua"/>
+	<event type="kill" name="taskbk" event="script" value="darkcity.lua"/>
+	<event type="attack" name="staminafiller" script="staminafiller.lua"/>
+	
+	<!-- Events -->
+	<event type="statschange" name="FireStorm" event="script" value="events/FireStorm.lua"/>
+	<event type="PrepareDeath" name="DesertDeath" event="script" value="events/DesertWAR.lua"/>
+	<event type="combat" name="DesertCombat" event="script" value="events/DesertWAR.lua"/>	
+	<event type="PrepareDeath" name="Ctf" event="script" value="events/CTF.lua"/>
+	<event type="PrepareDeath" name="BattleDeath" event="script" value="events/Battlefield.lua"/>
+	<event type="combat" name="BattleCombat" event="script" value="events/Battlefield.lua"/>
+	
+	<!--Quests-->	
+	<event type="kill" name="TeleportQuest" event="script" value="tpquest.lua"/>
+	<event type="kill" name="TeleportArena" event="script" value="tparena1.lua"/>	
+</creaturescripts>
