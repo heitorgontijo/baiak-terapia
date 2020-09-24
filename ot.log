@@ -1,0 +1,79 @@
+> WARNING: The Alber has been executed as super user! It is recommended to run as a normal user.
+Continue? (y/N)
+The Alber Version: (Alfa Servers.X.Alfa Version. - -) - Codename: (Crying Damson)
+Compiled with GNU C++ version 4.8.5 20150623 (Red Hat 4.8.5-39) for arch 64 Bits at Sep 23 2020 00:33:17
+
+A server developed by: Mark Samman and The Forgotten Server Developers.
+Visit our forums for updates, support, and resources: otland.net
+
+>> Loading config (config.lua)
+>> Opening logs
+>> Loading Password encryption:
+>>> Using (SHA1) encryption ... (done).
+>> Loading RSA key
+>> Starting SQL connection
+>> Running Database Manager
+> Optimizing table: account_viplist... [success]
+> Optimizing table: accounts... [success]
+> Optimizing table: bans... [success]
+> Optimizing table: environment_killers... [success]
+> Optimizing table: global_storage... [success]
+> Optimizing table: guild_invites... [success]
+> Optimizing table: guild_kills... [success]
+> Optimizing table: guild_ranks... [success]
+> Optimizing table: guild_wars... [success]
+> Optimizing table: guilds... [success]
+> Optimizing table: house_auctions... [success]
+> Optimizing table: house_data... [success]
+> Optimizing table: house_lists... [success]
+> Optimizing table: houses... [success]
+> Optimizing table: killers... [success]
+> Optimizing table: player_deaths... [success]
+> Optimizing table: player_depotitems... [success]
+> Optimizing table: player_items... [success]
+> Optimizing table: player_killers... [success]
+> Optimizing table: player_namelocks... [success]
+> Optimizing table: player_skills... [success]
+> Optimizing table: player_spells... [success]
+> Optimizing table: player_statements... [success]
+> Optimizing table: player_storage... [success]
+> Optimizing table: player_viplist... [success]
+> Optimizing table: players... [success]
+> Optimizing table: server_config... [success]
+> Optimizing table: server_motd... [success]
+> Optimizing table: server_record... [success]
+> Optimizing table: server_reports... [success]
+> Optimizing table: tile_items... [success]
+> Optimizing table: tile_store... [success]
+> Optimizing table: tiles... [success]
+>> Loading groups
+>> Loading items (OTB)
+>> Loading items (XML)
+>> Loading outfits
+>> Loading quests
+>> Loading raids
+>> Loading vocations
+>> Loading chat channels
+>> Loading experience stages
+>> Loading mods:
+>>> Loading GuildCast.xml ... (done).
+>>> Loading arena.xml ... (done).
+>>> Loading buypremium_command.xml ... (done).
+>>> Loading changender_command.xml ... (done).
+>>> Loading command-marry.xml ... (done).
+>>> Loading hunted.xml ... (done).
+>>> (0) mods were disabled.
+>> Loading script systems:
+>>> Loading weapons... (done).
+>>> Preparing weapons... (done).
+>>> Loading spells... (done).
+>>> Loading actions... (done).
+>>> Loading talkactions... (done).
+>>> Loading movements... (done).
+>>> Loading creaturescripts... (done).
+>>> Loading globalscripts... (done).
+>> Loading monsters
+>> Loading map and spawns:
+>>> Map size: 30000x30000.
+>>> Map descriptions: - "Saved with Remere's Map Editor 2.2" - "Dragon Baiak"sh: line 1:  3044 Done                    echo y
+      3045 Killed                  | ./theotxserver

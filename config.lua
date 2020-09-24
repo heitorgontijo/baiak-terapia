@@ -3,16 +3,16 @@
 	url = "alfa-baiak.com"
 	location = "Brazil"
 
-	motd = "Sejam bem vindos ao www.alfa-baiak.com servidor 24Horas!"
-	serverName = "Alfa Baiak"
-	loginMessage = "ABERTURA 08/06/2020 ÁS 19:00H"
+	motd = "Sejam bem vindos ao Baiak-Terapia!"
+	serverName = "Baiak-Terapia"
+	loginMessage = "Servidor 24horas"
 	displayGamemastersWithOnlineCommand = false
 
 	sqlType = "mysql"
 	sqlHost = "127.0.0.1"
 	sqlPort = 3306
 	sqlUser = "root"
-	sqlPass = "senha"
+	sqlPass = "HTG138522HTG"
 	sqlDatabase = "nsase"
 	sqlFile = ""
 	sqlKeepAlive = 0
@@ -22,7 +22,7 @@
 	encryptionType = "sha1"
 
 	worldId = 0
-	ip = "127.0.0.1"
+	ip = "159.203.118.43"
 	worldType = "open"
 	bindOnlyGlobalAddress = true
 	loginPort = 7171

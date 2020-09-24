@@ -437,11 +437,11 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/otx/source'
+ac_pwd='/root/baiak-terapia/sources'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
-MKDIR_P='/bin/mkdir -p'
-AWK='mawk'
+MKDIR_P='/usr/bin/mkdir -p'
+AWK='gawk'
 test -n "$AWK" || AWK=awk
 # The default lists apply if the user does not specify any file.
 ac_need_defaults=:
@@ -621,18 +621,18 @@ S["SQLITE_LIBS"]=""
 S["PGSQL_LIBS"]=""
 S["MYSQLPP_LIBS"]=""
 S["MYSQL_LIBS"]="-lmysqlclient"
-S["OPTIONAL_FLAGS"]="-D__WAR_SYSTEM__ -DNDEBUG -DBOOST_DISABLE_ASSERTS -D__ENABLE_SERVER_DIAGNOSTIC__ -D__ROOT_PERMISSION__ -D__ALT_LUA_PATH__"
+S["OPTIONAL_FLAGS"]=" -D__ENABLE_SERVER_DIAGNOSTIC__ -D__ROOT_PERMISSION__"
 S["LUA_LIBS"]=""
 S["LUA_CFLAGS"]=""
 S["PKG_CONFIG_LIBDIR"]=""
 S["PKG_CONFIG_PATH"]=""
 S["PKG_CONFIG"]=""
-S["XML_LIBS"]="-L/usr/lib -lxml2"
+S["XML_LIBS"]="-lxml2 -lz -lm -ldl"
 S["XML_CPPFLAGS"]="-I/usr/include/libxml2"
 S["XML2_CONFIG"]="/usr/bin/xml2-config"
 S["LIBOBJS"]=""
-S["EGREP"]="/bin/grep -E"
-S["GREP"]="/bin/grep"
+S["EGREP"]="/usr/bin/grep -E"
+S["GREP"]="/usr/bin/grep"
 S["CXXCPP"]="g++ -E"
 S["PROFILER_FLAGS"]=""
 S["SQLITE_FLAGS"]=""
@@ -647,7 +647,7 @@ S["USE_MYSQLPP_FALSE"]=""
 S["USE_MYSQLPP_TRUE"]="#"
 S["USE_MYSQL_FALSE"]="#"
 S["USE_MYSQL_TRUE"]=""
-S["DEBUG_FLAGS"]="-O3 -march=native -fomit-frame-pointer"
+S["DEBUG_FLAGS"]="-O0 -march=core2 -fomit-frame-pointer"
 S["OT_ADMIN_FALSE"]=""
 S["OT_ADMIN_TRUE"]="#"
 S["LOGIN_SERVER_FALSE"]=""
@@ -678,17 +678,17 @@ S["am__tar"]="$${TAR-tar} chof - \"$$tardir\""
 S["AMTAR"]="$${TAR-tar}"
 S["am__leading_dot"]="."
 S["SET_MAKE"]=""
-S["AWK"]="mawk"
-S["mkdir_p"]="/bin/mkdir -p"
-S["MKDIR_P"]="/bin/mkdir -p"
+S["AWK"]="gawk"
+S["mkdir_p"]="$(MKDIR_P)"
+S["MKDIR_P"]="/usr/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]=""
-S["install_sh"]="${SHELL} /home/otx/source/install-sh"
-S["MAKEINFO"]="${SHELL} /home/otx/source/missing --run makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/otx/source/missing --run autoheader"
-S["AUTOMAKE"]="${SHELL} /home/otx/source/missing --run automake-1.11"
-S["AUTOCONF"]="${SHELL} /home/otx/source/missing --run autoconf"
-S["ACLOCAL"]="${SHELL} /home/otx/source/missing --run aclocal-1.11"
+S["install_sh"]="${SHELL} /root/baiak-terapia/sources/install-sh"
+S["MAKEINFO"]="${SHELL} /root/baiak-terapia/sources/missing makeinfo"
+S["AUTOHEADER"]="${SHELL} /root/baiak-terapia/sources/missing autoheader"
+S["AUTOMAKE"]="${SHELL} /root/baiak-terapia/sources/missing automake-1.13"
+S["AUTOCONF"]="${SHELL} /root/baiak-terapia/sources/missing autoconf"
+S["ACLOCAL"]="${SHELL} /root/baiak-terapia/sources/missing aclocal-1.13"
 S["VERSION"]="2.X.Series"
 S["PACKAGE"]="otxserver"
 S["CYGPATH_W"]="echo"
@@ -699,8 +699,8 @@ S["INSTALL_PROGRAM"]="${INSTALL}"
 S["target_alias"]=""
 S["host_alias"]=""
 S["build_alias"]=""
-S["LIBS"]="-lmysqlclient -llua5.1 -lboost_filesystem-mt -lboost_date_time-mt -lboost_system-mt -lboost_regex-mt -lboost_thread-mt -lcrypto -lpthread -lz  -L/us"\
-"r/lib -lxml2"
+S["LIBS"]="-lmysqlclient -llua -lboost_filesystem-mt -lboost_date_time-mt -lboost_system-mt -lboost_regex-mt -lboost_thread-mt -lcrypto -lpthread -lz -lgmp  -l"\
+"xml2 -lz -lm -ldl"
 S["ECHO_T"]=""
 S["ECHO_N"]="-n"
 S["ECHO_C"]=""
@@ -820,11 +820,12 @@ D["HAVE_STRCASECMP"]=" 1"
 D["HAVE_STRNCASECMP"]=" 1"
 D["HAVE_STRSTR"]=" 1"
 D["HAVE_STRTOL"]=" 1"
+D["HAVE_GMP_H"]=" 1"
+D["HAVE_LIBGMP"]=" 1"
 D["HAVE_ZLIB_H"]=" 1"
 D["HAVE_LIBZ"]=" 1"
 D["HAVE_PTHREAD_H"]=" 1"
 D["HAVE_LIBPTHREAD"]=" 1"
-D["HAVE_OPENSSL_RSA_H"]=" 1"
 D["HAVE_OPENSSL_BN_H"]=" 1"
 D["HAVE_OPENSSL_ERR_H"]=" 1"
 D["HAVE_OPENSSL_SHA_H"]=" 1"
@@ -835,8 +836,8 @@ D["HAVE_LIBBOOST_REGEX_MT"]=" 1"
 D["HAVE_LIBBOOST_SYSTEM_MT"]=" 1"
 D["HAVE_LIBBOOST_DATE_TIME_MT"]=" 1"
 D["HAVE_LIBBOOST_FILESYSTEM_MT"]=" 1"
-D["HAVE_LUA5_1_LUA_H"]=" 1"
-D["HAVE_LIBLUA5_1"]=" 1"
+D["HAVE_LUA_H"]=" 1"
+D["HAVE_LIBLUA"]=" 1"
 D["HAVE_MYSQL_MYSQL_H"]=" 1"
 D["HAVE_LIBMYSQLCLIENT"]=" 1"
   for (key in D) D_is_set[key] = 1
@@ -1163,7 +1164,7 @@ $as_echo "$as_me: executing $ac_file commands" >&6;}
 
   case $ac_file$ac_mode in
     "depfiles":C) test x"$AMDEP_TRUE" != x"" || {
-  # Autoconf 2.62 quotes --file arguments for eval, but not when files
+  # Older Autoconf quotes --file arguments for eval, but not when files
   # are listed without --file.  Let's play safe and only enable the eval
   # if we detect the quoting.
   case $CONFIG_FILES in
@@ -1176,7 +1177,7 @@ $as_echo "$as_me: executing $ac_file commands" >&6;}
     # Strip MF so we end up with the name of the file.
     mf=`echo "$mf" | sed -e 's/:.*$//'`
     # Check whether this is an Automake generated Makefile or not.
-    # We used to match only the files named `Makefile.in', but
+    # We used to match only the files named 'Makefile.in', but
     # some people rename them; so instead we look at the file content.
     # Grep'ing the first line is not enough: some people post-process
     # each Makefile.in and add a new line on top of each file to say so.
@@ -1210,21 +1211,19 @@ $as_echo X"$mf" |
       continue
     fi
     # Extract the definition of DEPDIR, am__include, and am__quote
-    # from the Makefile without running `make'.
+    # from the Makefile without running 'make'.
     DEPDIR=`sed -n 's/^DEPDIR = //p' < "$mf"`
     test -z "$DEPDIR" && continue
     am__include=`sed -n 's/^am__include = //p' < "$mf"`
-    test -z "am__include" && continue
+    test -z "$am__include" && continue
     am__quote=`sed -n 's/^am__quote = //p' < "$mf"`
-    # When using ansi2knr, U may be empty or an underscore; expand it
-    U=`sed -n 's/^U = //p' < "$mf"`
     # Find all dependency output files, they are included files with
     # $(DEPDIR) in their names.  We invoke sed twice because it is the
     # simplest approach to changing $(DEPDIR) to its actual value in the
     # expansion.
     for file in `sed -n "
       s/^$am__include $am__quote\(.*(DEPDIR).*\)$am__quote"'$/\1/p' <"$mf" | \
-	 sed -e 's/\$(DEPDIR)/'"$DEPDIR"'/g' -e 's/\$U/'"$U"'/g'`; do
+	 sed -e 's/\$(DEPDIR)/'"$DEPDIR"'/g'`; do
       # Make sure the directory exists.
       test -f "$dirpart/$file" && continue
       fdir=`$as_dirname -- "$file" ||
